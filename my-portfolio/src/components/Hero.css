@@ -1,0 +1,24 @@
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+  }
+  
+  .hero-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    background-color: transparent; /* Ensures there's no background */
+  }
+  
+  .hero h1 {
+    color: #4B0082; /* Dark purple */
+    font-size: 3rem;
+  }
+  
+  .hero p {
+    color: #4B0082;
+    font-size: 1.2rem;
+  }
+  
