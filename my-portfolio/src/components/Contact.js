@@ -11,3 +11,4 @@ const Contact = () => {
 };
 
 export default Contact;
+//no idea what is happening here
