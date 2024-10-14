@@ -1,24 +1,94 @@
-.hero {
-    text-align: center;
-    padding: 50px 0;
-    background-color: #fff;
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #f4f4f4;
+  margin-top: 60px; /* Added margin to prevent overlap with navigation */
+}
+
+
+.hero-content {
+  background-color: #e6e6e6;
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-image img {
+  width: 300px;
+  height: auto;
+}
+
+.hero-text {
+  flex: 1;
+  margin-left: 50px;
+}
+
+.view-cv-btn, .contact-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.view-cv-btn {
+  background-color: #6c63ff;
+  color: white;
+  border-radius: 8px;
+}
+
+.view-cv-btn:hover {
+  background-color: #4a42d1;
+}
+
+.contact-btn {
+  background-color: #ff6565;
+  color: white;
+  border-radius: 8px;
+}
+
+.contact-btn:hover {
+  background-color: #d14444;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section Visibility */
+.section {
+  transition: opacity 0.5s ease; /* Smooth transition for opacity */
+  opacity: 0; /* Start hidden */
+}
+
+.section.visible {
+  opacity: 1; /* Show section when visible */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Reduce padding for smaller screens */
   }
-  
-  .hero-image {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    background-color: transparent; /* Ensures there's no background */
+
+  .hero-image img {
+    width: 80%; /* Adjust image size for smaller screens */
   }
-  
-  .hero h1 {
-    color: #4B0082; /* Dark purple */
-    font-size: 3rem;
+
+  .hero-text {
+    margin-left: 0;
+    text-align: center; /* Center text on smaller screens */
   }
-  
-  .hero p {
-    color: #4B0082;
-    font-size: 1.2rem;
-  }
-  
+}

@@ -3,11 +3,9 @@ import './Experience.css'; // Create this CSS file for styling
 
 const Experience = () => {
   return (
-    <section className="experience">
+    <section id="experience" className="section">
       <h2>Experience</h2>
-      <ul>
-        <li>NYNTAX - Quality Assurance and Content Manager (2022-Present)</li>
-      </ul>
+      <p>Details about your experience...</p>
     </section>
   );
 };

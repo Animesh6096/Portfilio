@@ -3,12 +3,12 @@ import './Contact.css'; // Create this CSS file for styling
 
 const Contact = () => {
   return (
-    <section className="contact">
+    <section id="contact" className="section contact">
       <h2>Contact</h2>
-      <p>Email: animesh.bhattacharjee.jhalok@gmail.com</p>
+      <p>Email: <a href="mailto:animesh.bhattacharjee.jhalok@gmail.com">animesh.bhattacharjee.jhalok@gmail.com</a></p>
+      {/* You can add more contact information or a contact form here */}
     </section>
   );
 };
 
 export default Contact;
-//no idea what is happening here
