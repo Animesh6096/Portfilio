@@ -1,8 +1,16 @@
 /* About Section */
 .about-section {
-  padding: 60px 20px;
-  background-color: #f4f4f4;
-  text-align: center;
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Slight rounding for a modern look */
+  padding: 20px;
+  background-color: white; /* Ensure contrast against the background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Optional subtle shadow */
+  margin-bottom: 30px; /* Space between blocks */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0; /* Padding for the content within, but no gaps between sections */
+  background-color: #f4f4f4; /* Same background as the rest of the page */
 }
 
 .about-content {
@@ -11,36 +19,29 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  flex-wrap: wrap; /* Allow for responsive behavior */
+  flex-wrap: wrap;
 }
 
 .about-text {
   flex: 1;
   background-color: white;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin-right: 20px; /* Space between text and image */
-  transition: transform 0.3s ease; /* Hover effect */
-}
-
-.about-text:hover {
-  transform: translateY(-5px); /* Slight lift effect on hover */
+  border-radius: 20px;
+  padding: 30px;
+  margin-right: 20px;
+  box-shadow: none; /* Remove shadows */
 }
 
 .about-image {
-  flex: 0 1 40%; /* Image takes up 40% of the container */
-  position: relative; /* For positioning the image */
-  margin-top: -20px; /* Adjust the position lower */
+  flex: 0 1 40%;
 }
 
 .about-image img {
-  width: 100%; /* Full width of the container */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  height: auto;
   border-radius: 10px;
-  transition: transform 0.3s ease; /* Hover effect for image */
+  transition: transform 0.3s ease;
 }
 
 .about-image img:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.05);
 }

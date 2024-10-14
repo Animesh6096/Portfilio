@@ -1,58 +1,85 @@
-/* Projects.css */
-
+/* Projects Section */
 .projects-section {
-    padding: 2rem 0;
-    text-align: center;
-  }
-  
-  .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* This will create space between cards */
-    gap: 15px; /* Add some space between the cards */
-  }
-  
-  .project-card {
-    flex: 0 1 calc(50% - 20px); /* 2 cards per row with space */
-    background-color: #f8f8f8;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease; /* Hover effect */
-  }
-  
-  .project-card:hover {
-    transform: translateY(-5px); /* Slight lift effect on hover */
-  }
-  
-  .image-container {
-    padding-top: 15px; /* Space from the top */
-    display: flex;
-    justify-content: center; /* Center the image */
-  }
-  
-  .project-image {
-    width: 35%; /* Adjust the width of the image to fit better */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 200px; /* Set a maximum height for the image */
-    object-fit: cover; /* Crop the image to fill the space */
-  }
-  
-  .project-content {
-    padding: 1rem;
-  }
-  
-  .view-project-btn {
-    background-color: #6c63ff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .view-project-btn:hover {
-    background-color: #5a54d8; /* Darker shade on hover */
-  }
-  
+  padding: 40px 20px; /* Adjust padding for overall section */
+  background-color: #f4f4f4; /* Softer contrast against the background */
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px; /* Space between cards */
+  max-width: 1200px; /* Limit container width */
+  margin: 0 auto; /* Center container */
+}
+
+.project-card {
+  display: flex; /* Flexbox for card layout */
+  flex: 0 1 48%; /* Ensure consistent card size */
+  background-color: white; /* Card background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Enhanced shadow for more depth */
+  overflow: hidden; /* Hide overflow for rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  height: 300px; /* Set a fixed height for all cards */
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* Enhanced lift effect on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.project-content {
+  padding: 100px; /* Increased padding for text */
+  flex: 100; /* Allow content to take remaining space */
+  display: flex;
+  flex-direction: column; /* Stack text vertically */
+  justify-content: center; /* Center content vertically */
+  text-align: left; /* Align text to the left */
+  width: 70%; /* Increase width for writing space */
+  margin-right: 15%; /* Move content slightly to the left */
+}
+
+.project-content h3 {
+  margin: 0 0 10px; /* Space below heading */
+  font-size: 1.4rem; /* Adjust title size for better readability */
+  color: #333; /* Darker color for better contrast */
+}
+
+.project-content p {
+  margin: 0 0 20px; /* Space between paragraphs */
+  flex-grow: 1; /* Allow description to grow */
+  color: #555; /* Softer text color for readability */
+}
+
+.view-project-btn {
+  background-color: #6c63ff; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Button padding */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background change */
+  align-self: flex-start; /* Align button to the left */
+  margin-top: 10px; /* Space above the button */
+  margin-left: -5%; /* Move button slightly to the left */
+}
+
+.project-image {
+  width: 100%; /* Set image width to 30% for better layout */
+  display: flex; /* Center the image */
+  align-items: center; /* Center image vertically */
+  justify-content: center; /* Center image horizontally */
+}
+
+.project-image img {
+  width: 100%; /* Image takes up 90% of the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for image */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.project-image img:hover {
+  transform: scale(1.05); /* Enhanced zoom effect on hover */
+}

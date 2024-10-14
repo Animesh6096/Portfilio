@@ -1,5 +1,11 @@
 /* Experience Section */
 .experience-section {
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Slight rounding for a modern look */
+  padding: 20px;
+  background-color: white; /* Ensure contrast against the background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Optional subtle shadow */
+  margin-bottom: 30px; /* Space between blocks */
   padding: 60px 20px;
   background-color: #f4f4f4;
   text-align: center;

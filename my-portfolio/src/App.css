@@ -1,19 +1,72 @@
-.App {
-  font-family: 'Arial', sans-serif;
-  background-color: white;
-  color: #333;
-  padding: 0;
+/* Global styles for a unified look */
+body {
   margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Set the background to light gray */
+  font-family: Arial, sans-serif; /* Set a standard font */
+  color: #333; /* Set standard text color */
 }
 
-h1, h2 {
-  margin-bottom: 20px;
+section {
+  background-color: #f4f4f4; /* Ensure all sections have the same background color */
+  padding: 0; /* Remove padding from the sections */
+  margin: 0; /* Remove margins to eliminate gaps */
+  border: none; /* No borders for separation */
+  box-shadow: none; /* Remove shadows */
 }
 
-p {
-  margin-bottom: 10px;
+/* Unified heading styles for all sections */
+section h2 {
+  font-size: 2.5rem;
+  color: #333; /* Set all headings to the same color */
+  text-align: center; /* Center the section titles */
+  margin: 40px 0; /* Space above and below headings */
+  text-transform: uppercase; /* Make headings uppercase for a uniform style */
+  position: relative; /* For hover effect */
+  display: inline-block;
+  padding-bottom: 10px;
 }
 
+section h2:hover {
+  color: #6c63ff; /* Change color on hover */
+}
+
+/* Add a small bottom border for the section titles */
+section h2:after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #6c63ff; /* Add a decorative underline */
+  margin: 10px auto 0; /* Center the underline */
+}
+
+/* Button styling (shared across components) */
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Consistent button styling for all sections */
+.view-cv-btn, .contact-btn, .view-project-btn {
+  background-color: #6c63ff;
+  color: white;
+  border-radius: 8px;
+}
+
+.view-cv-btn:hover, .contact-btn:hover, .view-project-btn:hover {
+  background-color: #4a42d1; /* Darker shade on hover */
+}
+
+/* Ensure smooth scrolling */
 html {
   scroll-behavior: smooth;
 }

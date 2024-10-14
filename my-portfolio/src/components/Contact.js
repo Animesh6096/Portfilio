@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import './Contact.css';
 import { FaPhone, FaEnvelope, FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
-import animeshImage from '../assets/Animesh1.png'; // Adjust the path if needed
 
 const Contact = () => {
   // Apply scroll animation using Intersection Observer

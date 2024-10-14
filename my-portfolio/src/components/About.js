@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import animeshImage from '../assets/Animesh1.png'; // Ensure this path is correct
+import animeshImage from '../assets/1728931117098-removebg-preview.png'; // Ensure this path is correct
 import { useScrollAnimation } from '../hooks/useScrollAnimation'; // Import the custom hook
 
 const About = () => {

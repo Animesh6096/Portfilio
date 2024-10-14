@@ -6,28 +6,28 @@ const projects = [
   {
     id: 1,
     title: 'Zoey Travel',
-    description: 'Revolutionizing tourism with a seamless platform connecting tourists and local vendors.',
+    description: 'Descripsion',
     link: '#', // Update with actual project link
     image: require('../assets/office_work.jpeg'), // Update with actual image path
   },
   {
     id: 2,
     title: 'Softcar',
-    description: 'A complete solution for renting and managing cars via Flutter mobile apps and a React web app for the admin dashboard.',
+    description: 'Description',
     link: '#', // Update with actual project link
     image: require('../assets/office_work.jpeg'), // Update with actual image path
   },
   {
     id: 3,
     title: 'Project 3',
-    description: 'Description for Project 3.',
+    description: 'Description.',
     link: '#', // Update with actual project link
     image: require('../assets/office_work.jpeg'), // Update with actual image path
   },
   {
     id: 4,
     title: 'Project 4',
-    description: 'Description for Project 4.',
+    description: 'Description.',
     link: '#', // Update with actual project link
     image: require('../assets/office_work.jpeg'), // Update with actual image path
   },

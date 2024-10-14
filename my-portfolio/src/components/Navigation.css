@@ -1,42 +1,57 @@
-/* Navigation.css */
+/* Navigation Bar */
 .nav-bar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensure the navigation is always on top */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-  }
-  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: transparent; /* Transparent background by default */
+  box-shadow: none; /* No shadow by default */
+  z-index: 1000; /* Ensure it stays above all other elements */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Change background color and add shadow when scrolled */
+.nav-bar.scrolled {
+  background-color: #ffffff; /* White background when scrolling */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add a subtle shadow */
+}
+
+/* Navigation menu styling */
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* Space between menu items */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar ul li {
+  display: inline-block;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333; /* Default text color */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for menu items */
+.nav-bar ul li a:hover {
+  color: #6c63ff; /* Highlight color on hover */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
   .nav-bar ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    gap: 20px; /* Adjust the gap for smaller screens */
   }
-  
-  .nav-bar li {
-    margin: 0 15px;
+
+  .nav-bar ul li a {
+    font-size: 0.9rem; /* Smaller font size on mobile */
   }
-  
-  .nav-bar a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 8px 16px;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-bar a.active {
-    color: #6c63ff; /* Highlight active section */
-  }
-  
-  .nav-bar a:hover {
-    color: #4a42d1;
-  }
-  
+}
