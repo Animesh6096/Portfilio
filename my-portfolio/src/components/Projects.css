@@ -1,21 +1,58 @@
-.projects {
-    text-align: center;
-    padding: 50px;
-    background-color: #fff;
-}
-  
-.projects h2 {
-    color: #4B0082;
-    font-size: 2.5rem;
-}
-  
-.projects ul {
-    list-style-type: none; /* Remove default bullet points */
-    padding: 0;
-}
+/* Projects.css */
 
-.projects li {
-    color: #333;
-    font-size: 1.1rem;
-    margin: 10px 0; /* Space between projects */
-}
+.projects-section {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* This will create space between cards */
+    gap: 15px; /* Add some space between the cards */
+  }
+  
+  .project-card {
+    flex: 0 1 calc(50% - 20px); /* 2 cards per row with space */
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Hover effect */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+  }
+  
+  .image-container {
+    padding-top: 15px; /* Space from the top */
+    display: flex;
+    justify-content: center; /* Center the image */
+  }
+  
+  .project-image {
+    width: 35%; /* Adjust the width of the image to fit better */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set a maximum height for the image */
+    object-fit: cover; /* Crop the image to fill the space */
+  }
+  
+  .project-content {
+    padding: 1rem;
+  }
+  
+  .view-project-btn {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-project-btn:hover {
+    background-color: #5a54d8; /* Darker shade on hover */
+  }
+  
