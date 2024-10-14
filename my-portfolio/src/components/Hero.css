@@ -5,10 +5,23 @@
   align-items: center;
   height: 90vh;
   background-color: #f4f4f4;
-  margin-top: 60px; /* Added margin to prevent overlap with navigation */
+  margin-top: -30px;
+  transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
 }
 
+/* Default state for elements that will animate */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px); /* Start slightly below */
+}
 
+/* When elements are in view, make them visible and reset their position */
+.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero Content */
 .hero-content {
   background-color: #e6e6e6;
   border-radius: 20px;
@@ -26,18 +39,32 @@
   height: auto;
 }
 
+/* Hero Text */
 .hero-text {
   flex: 1;
   margin-left: 50px;
 }
 
-.view-cv-btn, .contact-btn {
+.hero-text h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 20px 0;
+}
+
+/* Buttons */
+.view-cv-btn,
+.contact-btn {
   padding: 12px 24px;
   font-size: 1rem;
   border: none;
   cursor: pointer;
   margin-right: 10px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .view-cv-btn {
@@ -60,35 +87,21 @@
   background-color: #d14444;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+/* Additional animations for fade-in or slide-in effects */
+.slide-in-left {
+  transform: translateX(-50px);
 }
 
-/* Section Visibility */
-.section {
-  transition: opacity 0.5s ease; /* Smooth transition for opacity */
-  opacity: 0; /* Start hidden */
+.animated.slide-in-left {
+  transform: translateX(0);
+  opacity: 1;
 }
 
-.section.visible {
-  opacity: 1; /* Show section when visible */
+.slide-in-right {
+  transform: translateX(50px);
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .hero-content {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px; /* Reduce padding for smaller screens */
-  }
-
-  .hero-image img {
-    width: 80%; /* Adjust image size for smaller screens */
-  }
-
-  .hero-text {
-    margin-left: 0;
-    text-align: center; /* Center text on smaller screens */
-  }
+.animated.slide-in-right {
+  transform: translateX(0);
+  opacity: 1;
 }
