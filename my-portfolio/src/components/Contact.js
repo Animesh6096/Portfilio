@@ -36,30 +36,30 @@ const Contact = () => {
         </p>
 
         <div className="contact-info animate-on-scroll">
-          <div className="contact-item">
+          <a href="tel:+8801781836541" className="contact-item" target="_blank" rel="noopener noreferrer">
             <FaPhone className="contact-icon" />
-            <a href="tel:+8801781836541">+8801781836541</a>
-          </div>
-          <div className="contact-item">
+            <span>+8801781836541</span>
+          </a>
+          <a href="mailto:animesh.bhattacharjee@g.bracu.ac.bd" className="contact-item" target="_blank" rel="noopener noreferrer">
             <FaEnvelope className="contact-icon" />
-            <a href="mailto:animesh.bhattacharjee@g.bracu.ac.bd">Academic Mail</a>
-          </div>
-          <div className="contact-item">
+            <span>Academic Mail</span>
+          </a>
+          <a href="mailto:animesh.bhattacharjee.jhalok@gmail.com" className="contact-item" target="_blank" rel="noopener noreferrer">
             <FaEnvelope className="contact-icon" />
-            <a href="mailto:animesh.bhattacharjee.jhalok@gmail.com">Business Mail</a>
-          </div>
-          <div className="contact-item">
+            <span>Business Mail</span>
+          </a>
+          <a href="https://www.linkedin.com/in/animesh-bhattacharjee-jhalok/" className="contact-item" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="contact-icon" />
-            <a href="https://www.inkedin.com/in/animesh-bhattacharjee-jhalok/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </div>
-          <div className="contact-item">
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/Animesh6096" className="contact-item" target="_blank" rel="noopener noreferrer">
             <FaGithub className="contact-icon" />
-            <a href="https://github.com/Animesh6096" target="_blank" rel="noopener noreferrer">GitHub</a>
-          </div>
-          <div className="contact-item">
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.facebook.com/animeshbhattacharjee6096" className="contact-item" target="_blank" rel="noopener noreferrer">
             <FaFacebook className="contact-icon" />
-            <a href="https://www.facebook.com/animeshbhattacharjee6096" target="_blank" rel="noopener noreferrer">Facebook</a>
-          </div>
+            <span>Facebook</span>
+          </a>
         </div>
       </div>
     </section>
