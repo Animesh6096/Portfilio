@@ -9,6 +9,7 @@ const About = () => {
   return (
     <section id="about" className="about-section">
       <div className="about-content">
+        {/* About Text */}
         <div className="about-text animate-on-scroll">
           <h2>About Me</h2>
           <p>
@@ -16,6 +17,8 @@ const About = () => {
             I strive to create impactful software solutions and have a keen interest in working with the latest technologies.
           </p>
         </div>
+
+        {/* About Image */}
         <div className="about-image animate-on-scroll">
           <img src={animeshImage} alt="Animesh Bhattacharjee" />
         </div>

@@ -1,16 +1,10 @@
 /* About Section */
 .about-section {
-  border: 1px solid #ddd; /* Light gray border */
-  border-radius: 8px; /* Slight rounding for a modern look */
-  padding: 20px;
-  background-color: white; /* Ensure contrast against the background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Optional subtle shadow */
-  margin-bottom: 30px; /* Space between blocks */
+  padding: 80px 0; /* Ensure padding to create spacing */
+  background-color: #f4f4f4; /* Light background color */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 0; /* Padding for the content within, but no gaps between sections */
-  background-color: #f4f4f4; /* Same background as the rest of the page */
 }
 
 .about-content {
@@ -22,19 +16,25 @@
   flex-wrap: wrap;
 }
 
+/* Center the About title and make the card responsive */
 .about-text {
   flex: 1;
   background-color: white;
   border-radius: 20px;
   padding: 30px;
   margin-right: 20px;
-  box-shadow: none; /* Remove shadows */
+  box-shadow: none;
+  text-align: center; /* Centers the title */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about-image {
-  flex: 0 1 40%;
+/* Hover effect on the card */
+.about-text:hover {
+  transform: scale(1.05); /* Slight enlargement on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Image hover effect */
 .about-image img {
   width: 100%;
   height: auto;
@@ -43,5 +43,17 @@
 }
 
 .about-image img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Fade-in effect */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animated {
+  opacity: 1;
+  transform: translateY(0);
 }
