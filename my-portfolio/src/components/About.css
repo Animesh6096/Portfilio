@@ -16,7 +16,7 @@
   flex-wrap: wrap;
 }
 
-/* Center the About title and make the card responsive */
+/* About Text Card */
 .about-text {
   flex: 1;
   background-color: white;
@@ -24,7 +24,7 @@
   padding: 30px;
   margin-right: 20px;
   box-shadow: none;
-  text-align: center; /* Centers the title */
+  text-align: center; /* Centers the content */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -56,4 +56,31 @@
 .animated {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;     /* Center align content */
+    padding: 0 20px;        /* Add padding to prevent content from touching the edge */
+  }
+
+  .about-text {
+    margin-right: 0;        /* Remove right margin */
+    width: 90%;             /* Set a responsive width */
+    margin-bottom: 20px;    /* Space between text and image */
+    padding: 30px 20px;     /* Add horizontal padding to the card */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text {
+    width: 95%;  /* Further reduce width for very small screens */
+    padding: 20px 15px;  /* Reduce padding for smaller screens */
+  }
+
+  .about-content {
+    padding: 0 15px; /* Ensure space from the edges */
+  }
 }
