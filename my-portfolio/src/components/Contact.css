@@ -1,12 +1,31 @@
 /* Contact Section */
 .contact-section {
+  padding: 60px 20px; /* Same padding as other sections */
+  margin-bottom: 0; /* Remove unnecessary margin */
+  background-color: #f4f4f4; /* Match background */
+  box-shadow: none; /* Remove shadows */
+  border: none; /* Remove border */
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 60px 20px 60px 20px; /* Top and side padding, no bottom padding */
-  background-color: #ffffff;
   text-align: center;
   margin: 0; /* Remove all margin including bottom */
   position: relative; /* Ensure that no space is left at the bottom */
+}
+.contact-section {
+  padding: 60px 20px; /* Same padding as other sections */
+  margin-bottom: 0; /* Remove unnecessary margin */
+  background-color: #f4f4f4; /* Match background */
+  box-shadow: none; /* Remove shadows */
+  border: none; /* Remove border */
+}
+
+.contact-content {
+  padding: 60px 20px; /* Same padding as other sections */
+  margin-bottom: 0; /* Remove unnecessary margin */
+  background-color: #f4f4f4; /* Match background */
+  border: none; /* Remove border */
+  background-color: #ffffff; /* Light background for contrast */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
 }
 
 .contact-content {

@@ -6,6 +6,7 @@
   height: 80vh;
   background-color: #f4f4f4;
   margin-top: 0;
+  margin-bottom: 0;
   padding: 20px;
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
@@ -13,7 +14,7 @@
 .hero-content {
   background-color: #e6e6e6;
   border-radius: 20px;
-  padding: 50px;
+  padding: 100px;
   display: flex;
   max-width: 1200px;
   width: 100%;
