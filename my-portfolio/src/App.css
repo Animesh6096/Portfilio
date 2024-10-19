@@ -70,3 +70,28 @@ button:hover {
 html {
   scroll-behavior: smooth;
 }
+
+/* Global Styles to Prevent Overflow */
+html, body {
+  max-width: 100vw; /* Prevent body from exceeding the viewport width */
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent overflow in all sections */
+* {
+  box-sizing: border-box; /* Ensure padding and borders are included in element's width/height */
+}
+
+/* Disable horizontal scrolling caused by large elements */
+.container, .projects-section, .about-section, .hero-section {
+  width: 100%; /* Ensure containers don't exceed screen width */
+  max-width: 100vw; /* Ensure they don't overflow horizontally */
+}
+
+/* Ensure all cards and images inside cards stay within the container */
+.project-card, .about-card, .hero-card {
+  max-width: 100%; /* Ensure they fit within the screen */
+  overflow: hidden; /* Prevent content from causing overflow */
+}

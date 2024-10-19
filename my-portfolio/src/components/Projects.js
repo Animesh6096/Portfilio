@@ -6,28 +6,28 @@ const projects = [
   {
     id: 1,
     title: 'Zoey Travel',
-    description: 'Description of Zoey Travel project.',
+    description: 'Description of the project.',
     link: '#', // Update with actual project link
     image: require('../assets/office_work.jpeg'), // Update with actual image path
   },
   {
     id: 2,
     title: 'Softcar',
-    description: 'Description of Softcar project.',
+    description: 'Description of the project.',
     link: '#', // Update with actual project link
     image: require('../assets/office_work.jpeg'), // Update with actual image path
   },
   {
     id: 3,
     title: 'Project 3',
-    description: 'Description of Project 3.',
+    description: 'Description of the project.',
     link: '#', // Update with actual project link
     image: require('../assets/office_work.jpeg'), // Update with actual image path
   },
   {
     id: 4,
     title: 'Project 4',
-    description: 'Description of Project 4.',
+    description: 'Description of the project.',
     link: '#', // Update with actual project link
     image: require('../assets/office_work.jpeg'), // Update with actual image path
   },
